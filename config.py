@@ -6,117 +6,112 @@ load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 
-GUILD_ID = 1542284878739939528
+GUILD_ID = 1530923897459970119
 PREFIX = "!"
 
-OWNERSHIP_ROLE_ID        = 1542284878815567909
-MANAGER_ROLE_ID          = 1542284878807040112
-STAFF_ROLE_ID            = 1542284878790271034
-DEVELOPER_ROLE_ID        = 1542284878798655662
-CIVILIAN_MANAGER_ROLE_ID = 1542284878798655667
-CRIMINAL_MANAGER_ROLE_ID = 1542284878798655667
-DONATE_MANAGER_ROLE_ID   = 1542284878798655670
-FOUNDER_ROLE_ID          =  1542284878815567911
-STAFF_MANAGER_ID         = 1542284878798655669
-FEMALE_MANAGER_ID = 1542284878798655665
-EVENT_MANAGER_ID = 1542284878798655668
-GENERAL_MANAGER_ID = 1542284878807040113
+OWNERSHIP_ROLE_ID        = 1548234142351630409
+MANAGER_ROLE_ID          = 1541410701971820554
+STAFF_ROLE_ID            = 1541410726340726795
+DEVELOPER_ROLE_ID        = 1541410706925162557
+CIVILIAN_MANAGER_ROLE_ID = 1541410696275689493
+CRIMINAL_MANAGER_ROLE_ID = 1541410696275689493
+DONATE_MANAGER_ROLE_ID   = 1541410687098560512
+FOUNDER_ROLE_ID          =  1541410680354119680
+STAFF_MANAGER_ID         = 1541410689548157028
+EVENT_MANAGER_ID = 1541410694942036029
+GENERAL_MANAGER_ID = 1541410688352653473
 APPLICATION_ACCEPTED_ROLES = {
-    "staff": 1542284878769291303  , 
-    "manager":  1542284878769291303,  
+    "staff": 1541410727791697960  , 
+    "manager": 1541410727791697960 ,  
 }
 
 APPLICATION_REVIEW_ROLES = {
-    "elas": [1542284878769291301],
-    "ekab": [1542284878769291300],
-    "dikastiko": [1542284878769291299],
+    "elas": [1541411049318645760],
+    "ekab": [1547995025995079831],
+    "limeniko": [1541410750306717716],
     "staff": [OWNERSHIP_ROLE_ID],
     "manager": [OWNERSHIP_ROLE_ID],
     "criminal": [OWNERSHIP_ROLE_ID],
 }
-SERVER_ORG_ID = 1542284878807040114
 
 STAFF_TEAM_ROLE_IDS = [STAFF_ROLE_ID, MANAGER_ROLE_ID, OWNERSHIP_ROLE_ID]
 
-TICKET_SUPPORT_CHANNEL_ID =  1542284880900268192
-TICKET_SUPPORT_BANNER_URL = "https://i.imgur.com/tIlS976.jpeg"
-TICKET_SUPPORT_THUMBNAIL_URL = "https://i.imgur.com/TOo1WCC.png"
+TICKET_SUPPORT_CHANNEL_ID = 1541410871249473576
+TICKET_SUPPORT_BANNER_URL = "https://i.imgur.com/p0ELkaj.png"
+TICKET_SUPPORT_THUMBNAIL_URL = "https://i.imgur.com/hfmJ2G9.png"
 
-CAT_TICKET_OWNERSHIP_ID = 1542284882028273793
-CAT_TICKET_SUPPORT_ID   = 1542284881801904215
-CAT_TICKET_ANTICHEAT_ID = 1544775231409889330
-CAT_TICKET_REWARD_ID    = 1544775054783545454
-CAT_TICKET_REPORT_STAFF_ID = 1544775360565084210
-CAT_TICKET_REPORT_MANAGER_ID = 1544775360565084210
-CAT_TICKET_REPORT_OWNERSHIP_ID = 1544775360565084210
+CAT_TICKET_OWNERSHIP_ID = 1548237180797853706
+CAT_TICKET_SUPPORT_ID   = 1548237353083211826
+CAT_TICKET_REPORT_ID = 1548237262075203656
+CAT_TICKET_REWARD_ID = 1548237423929073735
+CAT_TICKET_REPORT_STAFF_ID = 1548237567496036372
+CAT_TICKET_REPORT_MANAGER_ID = 1548237729035194439
+CAT_TICKET_REPORT_OWNERSHIP_ID = 1548237815404306495
 
-REPORT_PANEL_BANNER_URL = "https://i.imgur.com/qaCEDaG.jpeg"
-CAT_JOBS_ID = 1542284882028273787
+REPORT_PANEL_BANNER_URL = "https://i.imgur.com/p0ELkaj.png"
+CAT_JOBS_ID = 1548237993293123614
 
-TICKET_JOBS_BANNER_URL = "https://i.imgur.com/qaCEDaG.jpeg"
-TICKET_JOBS_THUMBNAIL_URL = "https://i.imgur.com/TOo1WCC.png"
-
-
-CAT_DONATE_ID = 1542553403954298980
-
-TICKET_DONATE_BANNER_URL = "https://i.imgur.com/qaCEDaG.jpeg"
-TICKET_DONATE_THUMBNAIL_URL = "https://i.imgur.com/TOo1WCC.png"
-
-STAFF_PING_CHANNEL_ID =  1542553588994408570
+TICKET_JOBS_BANNER_URL = "https://i.imgur.com/p0ELkaj.png"
+TICKET_JOBS_THUMBNAIL_URL = "https://i.imgur.com/hfmJ2G9.png"
 
 
-LOG_TICKETS_CHANNEL_ID =  1542284879704621094
-TICKET_NOTIFIER_CHANNEL_ID = 1542284879704621094
+CAT_DONATE_ID = 1548238120137261088
 
-SUGGESTIONS_CHANNEL_ID =    1542284881126498391
+TICKET_DONATE_BANNER_URL = "https://i.imgur.com/p0ELkaj.png"
+TICKET_DONATE_THUMBNAIL_URL = "https://i.imgur.com/hfmJ2G9.png"
+
+STAFF_PING_CHANNEL_ID = 1548238295836786768
 
 
-SUPPORT_VOICE_CHANNEL_ID = 1542284880900268197
+LOG_TICKETS_CHANNEL_ID =  1548238452544249876
+TICKET_NOTIFIER_CHANNEL_ID = 1548238452544249876
 
-SUPPORT_VOICE_NOTIFIER_CHANNEL_ID = 1542553588994408570
-SUPPORT_VOICE_PING_ROLE_ID = 1542284878790271034
+SUGGESTIONS_CHANNEL_ID = 1541410881806540900
 
-LOG_APPLICATIONS_CHANNEL_ID = 1542284880132448277
 
+SUPPORT_VOICE_CHANNEL_ID = 1541410840144781324
+
+SUPPORT_VOICE_NOTIFIER_CHANNEL_ID = 1548238295836786768
+SUPPORT_VOICE_PING_ROLE_ID = 1541410726340726795
 
 LOG_APPLICATIONS_CHANNEL_IDS = {
-    "elas": 1542284880132448278    , 
-    "ekab":   1542284880132448279  , 
-    "dikastiko": 1542284880132448280 ,
-    "staff":  1542284880132448277  ,  
-    "manager": 1542284880132448277 ,   
-    "criminal": 1542284880132448281,
+    "elas":   1548240274315149425  , 
+    "ekab":   1548240356443816087  , 
+    "limeniko": 1548240540594741269 ,
+    "staff":   1548240606759886868 ,  
+    "manager": 1548240729128575008 ,   
+    "criminal": 1548241299495325797,
 }
 
 APPLICATION_ANNOUNCE_CHANNEL_IDS = {
-    "elas": 1542284881801904209,
-    "ekab": 1542284881801904210,
-    "dikastiko":1542284881801904211 ,
-    "staff": 1542284881801904208 ,
+    "elas": 1541410893126967397,
+    "ekab": 1541410894846763018 ,
+    "limeniko": 1541410898671837247,
+    "staff":  1541410888450310206,
 }
 
-APPLICATION_ANNOUNCE_MENTION_CHANNEL_ID = 1542284881357312118
+APPLICATION_ANNOUNCE_MENTION_CHANNEL_ID = 1548241991803080724
 
-APPLICATION_ANNOUNCE_STAFF_MENTION_CHANNEL_ID = 1542284880900268195
-
-
-INVITE_LOG_CHANNEL_ID =  1542284880132448284
+APPLICATION_ANNOUNCE_STAFF_MENTION_CHANNEL_ID = 1541410862106021908
 
 
-LOG_UNTIMEOUT_CHANNEL_ID    = 1542284879927050338
+INVITE_LOG_CHANNEL_ID = 1548242157654253678 
 
-APPLICATIONS_PANEL_CHANNEL_ID = 1542284881583669253
-APPLICATIONS_CATEGORY_ID      = 1542756389896720435
-APPLICATIONS_BANNER_URL = "https://i.imgur.com/lzDSDeT.jpeg"
 
-LOG_GIVEAWAY_CHANNEL_ID =  1542284879927050340
-GIVEAWAY_BANNER_URL = "https://i.imgur.com/qaCEDaG.jpeg" 
+LOG_UNTIMEOUT_CHANNEL_ID    = 1548242247030542427
 
-WHITELIST_CATEGORY_ID = 1542284879255838807           
-LOG_WHITELIST_CHANNEL_ID = 1542284880132448282         
-WHITELIST_ACCEPTED_ROLE_ID =  1542284878756843550     
-WHITELIST_BANNER_URL = "https://i.imgur.com/qaCEDaG.jpeg"      
-WHITELIST_LINK_URL = "https://www.roblox.com/share/g/120555068"   
+APPLICATIONS_PANEL_CHANNEL_ID = 1548242470167379989
+APPLICATIONS_CATEGORY_ID      = 1548242557861888091
+APPLICATIONS_BANNER_URL = "https://i.imgur.com/p0ELkaj.png"
+
+LOG_GIVEAWAY_CHANNEL_ID =  1548242645610922064
+GIVEAWAY_BANNER_URL = "https://i.imgur.com/p0ELkaj.png" 
+
+WHITELIST_CATEGORY_ID =          
+LOG_WHITELIST_CHANNEL_ID =          
+WHITELIST_ACCEPTED_ROLE_ID =       
+WHITELIST_BANNER_URL = "https://i.imgur.com/p0ELkaj.png"      
+WHITELIST_LINK_URL = ""   
 WHITELIST_LINK_LABEL = "Join Now" 
 WHITELIST_LINK_TEXT = "Για να μπείς στο game μας θα πρέπει αναγκαστικά να είσαι μέλος του roblox group. Πάτα το κουμπί **Join Now** για να γίνεις μέλος." 
 
@@ -172,24 +167,23 @@ APPLICATION_TYPES = {
             "Ποιος είναι ο ρόλος του ΕΚΑΒ μέσα στο RP",
         ],
     },
-   "dikastiko":{
-       "label": "Δικαστικό μέγαρο",
+   "limeniko":{
+       "label": "Λιμενικό Σώμα",
        "questions": [
-           "Πόσο χρονών είσαι;",
-           "Πως σε λένε στο Roblox;",
-           "Ποιο είναι το πραγματικό όνομα σας;",
-           "Τι αρμοδιότητες έχει ένας δικαστής;",
-           "Ποια είναι η διαφορά μεταξύ κατηγορουμένου και ενόχου;",
-           "Τι θεωρείται αποδεικτικό στοιχείο;",
-           "Πότε μπορεί να απορριφθεί ένα αποδεικτικό στοιχείο;",
-           "Τι πρέπει να κάνει ο δικαστής αν οι δύο πλευρές διαφωνούν έντονα;",
-           "Ποιος έχει το δικαίωμα να καταθέσει στοιχεία στο δικαστήριο;",
-           "Τι σημαίνει αμεροληψία;",
-           "Πώς θα αντιμετώπιζες έναν παίκτη που διακόπτει συνεχώς τη διαδικασία;",
-           "Αν ένας φίλος σου είναι κατηγορούμενος, θα μπορούσες να αναλάβεις την υπόθεση; Γιατί;",
-           "Τι θα έκανες αν ένας δικηγόρος προσέβαλλε τον δικαστή;",
-           "Πότε πρέπει να λήξει μια δίκη;",
-       ],
+            "Πόσο χρονών είσαι;",
+            "Πως σε λένε στο roblox;",
+            {"type": "yesno", "text": "Ξέρεις ότι θα πρέπει να γράψεις την αίτηση σου στα ελληνικά και όχι greeklish αλλιώς θα απορριφθεί;"},
+            {"type": "yesno", "text": "Ξέρεις ότι άμα στείλεις κάποιο προσωπικό μήνυμα σε κάποιον ανώτερο θα απορριφθεί κατευθείαν η αίτηση σου"},
+            "Γιατί θέλεις να υπηρετήσεις στο λιμενικό;",
+            "Ποια θεωρείς ότι είναι τα σημαντικότερα χαρακτηριστικά ενός καλού άτομου στο λιμενικό;",
+            "Πώς αντιμετωπίζεις καταστάσεις πίεσης ή άγχους;",
+            "Έχεις συμμετάσχει ποτέ σε δραστηριότητες που απαιτούσαν ομαδική συνεργασία; Δώσε ένα παράδειγμα.",
+            "Πώς θα αντιδρούσες αν λάμβανες μια δύσκολη διαταγή με την οποία δεν συμφωνούσες προσωπικά;",
+            "Ποια είναι τα δυνατά σου σημεία και ποια θεωρείς ότι χρειάζονται βελτίωση;",
+            "Πώς διατηρείς τη φυσική σου κατάσταση και πόσο σημαντική πιστεύεις ότι είναι η σωματική άσκηση για ένα άτομο στο λιμενικό;",
+            "Πώς θα διαχειριζόσουν μια κατάσταση όπου θα έπρεπε να πάρεις γρήγορα μια κρίσιμη απόφαση;",
+            "Τι γνωρίζεις για τις υποχρεώσεις και τις απαιτήσεις της λιμενικής ζωής;"
+        ],
    },
     "staff": {
         "label": "Staff",
@@ -252,13 +246,13 @@ APPLICATION_TYPES = {
     },
 }
 
-CRIMINAL_APPLICATIONS_BANNER_URL = "https://i.imgur.com/qaCEDaG.jpeg"
+CRIMINAL_APPLICATIONS_BANNER_URL = "https://i.imgur.com/p0ELkaj.png"
 
-EMBED_COLOR = int(os.getenv("EMBED_COLOR", "0x9b59b6"), 16)
+EMBED_COLOR = int(os.getenv("EMBED_COLOR", "#fd941c"), 16)
 
-REVIEWS_PANEL_CHANNEL_ID =  1542284881126498393 
-REVIEWS_LOG_CHANNEL_ID =  1542284881126498394 
-REVIEWS_BANNER_URL = "https://i.imgur.com/qaCEDaG.jpeg" 
+REVIEWS_PANEL_CHANNEL_ID = 1548242843766620180
+REVIEWS_LOG_CHANNEL_ID = 1548242956396400731  
+REVIEWS_BANNER_URL = "https://i.imgur.com/p0ELkaj.png" 
 
-STAFF_COMPLIMENTS_CHANNEL_ID = 1542757197526597702
-STAFF_COMPLIMENTS_LOG_CHANNEL_ID = 1542757197526597702
+STAFF_COMPLIMENTS_CHANNEL_ID = 1541410885002854512
+STAFF_COMPLIMENTS_LOG_CHANNEL_ID = 1548243548703301714
