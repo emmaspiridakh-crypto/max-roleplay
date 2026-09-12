@@ -107,11 +107,11 @@ APPLICATIONS_BANNER_URL = "https://i.imgur.com/p0ELkaj.png"
 LOG_GIVEAWAY_CHANNEL_ID =  1548242645610922064
 GIVEAWAY_BANNER_URL = "https://i.imgur.com/p0ELkaj.png" 
 
-WHITELIST_CATEGORY_ID =          
-LOG_WHITELIST_CHANNEL_ID =          
-WHITELIST_ACCEPTED_ROLE_ID =       
+WHITELIST_CATEGORY_ID = 1548295351960731648         
+LOG_WHITELIST_CHANNEL_ID = 1548295445971861596        
+WHITELIST_ACCEPTED_ROLE_ID = 1548295537562878092
 WHITELIST_BANNER_URL = "https://i.imgur.com/p0ELkaj.png"      
-WHITELIST_LINK_URL = ""   
+WHITELIST_LINK_URL = "https://dont.com"   
 WHITELIST_LINK_LABEL = "Join Now" 
 WHITELIST_LINK_TEXT = "Για να μπείς στο game μας θα πρέπει αναγκαστικά να είσαι μέλος του roblox group. Πάτα το κουμπί **Join Now** για να γίνεις μέλος." 
 
