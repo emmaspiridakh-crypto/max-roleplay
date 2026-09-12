@@ -30,11 +30,11 @@ def _ticket_types() -> dict:
             "category_id": config.CAT_TICKET_SUPPORT_ID,
             "view_roles": config.STAFF_TEAM_ROLE_IDS,
         },
-        "female": {
-            "label": "Female Support",
-            "emoji": emoji("tickets", "female"),
-            "category_id": config.CAT_TICKET_ANTICHEAT_ID,
-            "view_roles": [config.FEMALE_MANAGER_ID, config.OWNERSHIP_ROLE_ID],
+        "report": {
+            "label": "Report",
+            "emoji": emoji("tickets", "report"),
+            "category_id": config.CAT_TICKET_REPORT_ID,
+            "view_roles": [config.OWNERSHIP_ROLE_ID],
         },
         "reward": {
             "label": "Claim Your Reward",
@@ -141,7 +141,7 @@ class Tickets(commands.Cog):
         container = build_base_container(
             title=f"{data['emoji']} {data['label']} Ticket",
             description=f"Άνοιξε από: {opener.mention}\n Παρακαλόυμε περιμένετε λίγο και η ομάδα μας θα σας απαντήσει σύντομα.",
-            color=discord.Colour.purple(),
+            color=discord.Colour.gold(),
         )
         add_separator(container)
         close_btn = ui.Button(
@@ -343,7 +343,7 @@ class Tickets(commands.Cog):
     async def panel_support(self, interaction: discord.Interaction):
         ttypes = _ticket_types()
         container = build_base_container(
-            title=f"{emoji('tickets', 'ticket')} Paradise Roleplay Ticket",
+            title=f"{emoji('tickets', 'ticket')} Max Roleplay Ticket",
             banner_url=config.TICKET_SUPPORT_BANNER_URL,
         )
         add_separator(container)
@@ -357,7 +357,7 @@ class Tickets(commands.Cog):
         _descriptions = {
             "ownership": "Επικοινωνία αποκλειστικά με το Ownership",
             "support": "Γενική υποστήριξη & ερωτήσεις",
-            "female": "Support για τις γυναικάρες του server",
+            "report": "Κάνε report για κάποιο συμβάν/παίχτη",
             "reward": "Διεκδίκησε το reward σου",
         }
         options = [
@@ -367,7 +367,7 @@ class Tickets(commands.Cog):
                 emoji=ttypes[k]["emoji"] or None,
                 description=_descriptions.get(k, ""),
             )
-            for k in ("ownership", "support", "female", "reward")
+            for k in ("ownership", "support", "report", "reward")
         ]
         select = ui.Select(placeholder="Επίλεξε κατηγορία...", options=options, custom_id="support_ticket_select")
         add_action_row(container, select)
@@ -384,7 +384,7 @@ class Tickets(commands.Cog):
         civ = ttypes["civilian_job"]
 
         container = build_base_container(
-            title=f"{emoji('tickets', 'ticket')} Paradise Roleplay - Civilian Ticket",
+            title=f"{emoji('tickets', 'ticket')} Max Roleplay - Civilian Ticket",
             banner_url=config.TICKET_JOBS_BANNER_URL,
             thumbnail_url=config.TICKET_JOBS_THUMBNAIL_URL,
         )
@@ -414,7 +414,7 @@ class Tickets(commands.Cog):
         ownership_t = ttypes["report_ownership"]
 
         container = build_base_container(
-            title=f"{emoji('tickets', 'report')} Paradise Roleplay - Report",
+            title=f"{emoji('tickets', 'report')} Max Roleplay - Report",
             banner_url=config.REPORT_PANEL_BANNER_URL,
         )
         add_separator(container)
@@ -451,7 +451,7 @@ class Tickets(commands.Cog):
         data = ttypes["donate"]
 
         container = build_base_container(
-            title=f"{data['emoji']} Donate ToS - Paradise Roleplay",
+            title=f"{data['emoji']} Donate ToS - Max Roleplay",
             banner_url=config.TICKET_DONATE_BANNER_URL,
             thumbnail_url=config.TICKET_DONATE_THUMBNAIL_URL,
         )
@@ -483,8 +483,8 @@ class Tickets(commands.Cog):
         add_text(container, (
             "## Πώς να κάνετε Donate;\n"
             "Για να πραγματοποιήσετε Donate μπορείτε να μπείτε στο παρακάτω κανάλι:\n"
-            "https://discord.com/channels/1542284878739939528/1542284881583669251"
-            "Εκεί μπορείτε να περιμένετε κάποιο μέλος <@&1542284878798655670> ή να ανοίξετε ένα Donate Ticket για εξυπηρέτηση. "
+            "https://discord.com/channels/1530923897459970119/1548291842934833202"
+            "Εκεί μπορείτε να περιμένετε κάποιο μέλος <@&1541410687098560512> ή να ανοίξετε ένα Donate Ticket για εξυπηρέτηση. "
             "Σε περίπτωση πληρωμής μέσω Paysafecard είναι απαραίτητο να στείλετε και φωτογραφία του αποκόμματος. "
             "Ο χρόνος εξυπηρέτησης συνήθως κυμαίνεται μεταξύ **24 έως 48 ωρών**.\n\n"
             "```Για πιο γρήγορη εξυπηρέτηση προτείνεται να ανοίξετε ένα ticket ώστε να μιλήσετε απευθείας με κάποιον υπεύθυνο για την διαδικασία Donate.```"
