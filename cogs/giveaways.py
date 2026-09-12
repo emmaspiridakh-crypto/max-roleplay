@@ -351,7 +351,7 @@ class Giveaways(commands.Cog):
             )
 
         panel_text = (
-            f"## {emoji('giveaway','giveaway')} GIVEAWAY\n - Paradise Roleplay\n"
+            f"## {emoji('giveaway','giveaway')} GIVEAWAY\n - Max Roleplay\n"
             f"{emoji('giveaway','prize')} **Έπαθλο:** {gw['prize']}\n"
             f"{emoji('giveaway','host')} **Host:** {host_str}\n"
             f"{emoji('giveaway','winners_count')} **Νικητές:** {gw['winner_count']}\n"
@@ -361,7 +361,7 @@ class Giveaways(commands.Cog):
             f"{winners_str}"
         )
 
-        container = ui.Container(accent_colour=discord.Colour.from_str("#593695") if not is_ended else discord.Colour.greyple())
+        container = ui.Container(accent_colour=discord.Colour.from_str("#fd941c") if not is_ended else discord.Colour.greyple())
 
         if config.GIVEAWAY_BANNER_URL:
             container.add_item(ui.MediaGallery(discord.MediaGalleryItem(media=config.GIVEAWAY_BANNER_URL)))
