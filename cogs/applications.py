@@ -58,7 +58,7 @@ class Applications(commands.Cog):
     @app_commands.checks.has_any_role(config.OWNERSHIP_ROLE_ID)
     async def panel_applications(self, interaction: discord.Interaction):
         container = build_base_container(
-            title="Paradise Roleplay | Applications",
+            title="Max Roleplay | Applications",
             description="Επίλεξε την ομάδα που σε ενδιαφέρει και υπόβαλε αίτηση.\n **Απαγορεύετε αυστηρά η χρήση του AI.**. **Έχεις 30 λεπτά να ολοκληρώσεις την αίτηση σου αλλιώς θα ακυρωθεί.** .",
             banner_url=config.APPLICATIONS_BANNER_URL,
         )
@@ -67,7 +67,7 @@ class Applications(commands.Cog):
         _app_info = {
             "elas":    {"description": "Προστάτεψε τους συμπολίτες σου. Διατήρησε την τάξη και κράτα την πόλη ασφαλή.",             "emoji_key": "elas"},
             "ekab":    {"description": "Γίνε ο ήρωας σε κάθε επείγον περιστατικό. Στήριξε τους ανθρώπους όταν σε χρειάζονται περισσότερο.", "emoji_key": "ekab"},
-            "dikastiko": {"description": "Δούλεψε στο δικαστικό μέγαρο και κράτα την πόλη ασφαλή.", "emoji_key": "dikastiko"},
+            "limeniko": {"description": "Δούλεψε στο λιμενικό σώμα και κράτα την πόλη ασφαλή.", "emoji_key": "limeniko"},
             "staff":   {"description": "Γίνε η δύναμη πίσω από την τάξη. Στήριξε την κοινότητα, βοήθησε τους παίκτες και κράτα τον server ασφαλή.", "emoji_key": "staff"},
             "manager": {"description": "Θέση υψηλής ευθύνης — διαχειρίσου server & ομάδα staff.",               "emoji_key": "manager"},
         }
@@ -101,10 +101,10 @@ class Applications(commands.Cog):
         locked = _is_locked("criminal")
         role_mention = f"<@&{config.CRIMINAL_MANAGER_ROLE_ID}>"
 
-        container = ui.Container(accent_colour=discord.Colour.from_str("#593695"))
+        container = ui.Container(accent_colour=discord.Colour.from_str("#fd941c"))
         container.add_item(ui.TextDisplay(
             f"## 🔪 CRIMINAL TEAM APPLICATION\n"
-            f"Θέλεις να γίνεις μέλος μιας εγκληματικής ομάδας στο Paradise Roleplay;\n"
+            f"Θέλεις να γίνεις μέλος μιας εγκληματικής ομάδας στο Max Roleplay;\n"
             f"Συμπλήρωσε την αίτηση και δείξε μας τι αξίζει η ομάδα σου!\n"
             f"Υπεύθυνοι: {role_mention}"
         ))
