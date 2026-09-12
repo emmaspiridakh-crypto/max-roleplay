@@ -7,9 +7,9 @@ from discord.ext import commands
 import config
 from utils.permissions import slash_is_staff_team
 
-ACCENT_COLOR = discord.Colour.from_str("#593695")
+ACCENT_COLOR = discord.Colour.from_str("#fd941c")
 
-RULES_PANEL_BANNER_URL = "https://i.imgur.com/qaCEDaG.jpeg"
+RULES_PANEL_BANNER_URL = "https://i.imgur.com/p0ELkaj.png"
 
 
 def _section(container: ui.Container, title: str, lines: list[str]) -> None:
@@ -22,8 +22,8 @@ def build_general_rules_containers() -> list[ui.Container]:
     part1.add_item(ui.TextDisplay("## General Rules"))
     part1.add_item(ui.Separator(spacing=discord.SeparatorSpacing.small))
     part1.add_item(ui.TextDisplay(
-        "**Paradise Roleplay Roblox**\n"
-        "Καλώς ήρθατε στον Paradise RP server.\n\n"
+        "**Max Roleplay Roblox**\n"
+        "Καλώς ήρθατε στον Max RP server.\n\n"
         "Παρακαλώ διαβάστε και τηρήστε τους παρακάτω κανόνες.\n"
         "Μη τήρηση των κανόνων θεωρείται αδυναμία role play και θα τιμωρείται ανάλογα την "
         "παράβαση με warning/kick/ban.\n\n"
@@ -208,8 +208,8 @@ def build_zones_container() -> ui.Container:
         "**Τα Green Zone είναι:**",
         "• ΕΚΑΒ",
         "• Ελληνική Αστυνομία",
-        "• Δικαστικό μέγαρο",
         "• Πλατεία",
+        "• Λιμενικό",
     ])
     container.add_item(ui.Separator(spacing=discord.SeparatorSpacing.small))
 
@@ -235,7 +235,7 @@ class RulesPanel(commands.Cog):
             container.add_item(ui.Separator(spacing=discord.SeparatorSpacing.small))
 
         container.add_item(ui.TextDisplay(
-            "# Κανόνες Paradise Roleplay\nΠατήστε ένα από τα παρακάτω κουμπιά για να δείτε τους "
+            "# Κανόνες Max Roleplay\nΠατήστε ένα από τα παρακάτω κουμπιά για να δείτε τους "
             "αντίστοιχους κανόνες. Είναι αναγκαστηκή η γνώση των κανόνων."
         ))
         container.add_item(ui.Separator(spacing=discord.SeparatorSpacing.small))
